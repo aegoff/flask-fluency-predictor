@@ -1,0 +1,34 @@
+{% extends "base2.html" %}
+<head>
+<title>{% block title%}FluencyPredictor: FAQs{% endblock %}</title>
+</head>
+<style>
+</style>
+</head>
+<body>
+{% block content%}
+<div class="row d_flex" style="background-color: white;">
+        <div class="col-md-12" style="background-color: white;">
+          <center>
+            <br>
+          <div> <h1 style="font-size: 40px;">FluencyPredictor: FAQs</h1></div>
+          <br>
+          <br>
+
+<details style="font-size: 20px;"><summary style="cursor:pointer;outline: none;font-size: 30px"><strong>Are you storing any data?</strong></summary>
+No. We don't collect any data; it's all anonymous.<br>Any files stored are deleted within 5 minutes.
+</details>
+<br>
+<details style="font-size: 20px;"><summary style="cursor:pointer;outline: none;font-size: 30px"><strong>How does this whole thing work exactly?</strong></summary>
+We use offline speech-to-text recognition software that converts your audio into text. <br>Then, we use lexical diversity analysis to return your results to you.
+</details>
+<br>
+<details style="font-size: 20px;"><summary style="cursor:pointer;outline: none; font-size: 30px;"><strong>How can I make the measurements be as accurate as possible?</strong></summary>Try your best to say more than 50 words. In other words, try to use up as much of the time as you can. 
+<image src="{{url_for('static',filename='vocd_norms.png')}}"></image>
+</details>
+
+<br><br><br><br><br>
+</center>
+</div>
+</div>
+{% endblock %}

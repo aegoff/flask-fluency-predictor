@@ -1,0 +1,45 @@
+{% extends "base2.html" %}
+<title>{% block title%}FluencyPredictor: Report and Analysis{% endblock %}</title>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+</head>
+{% block content%}
+		  <div class="row d_flex" style="background-color: white;">
+        <div class="col-md-12" style="background-color: white;">
+          <center>
+            <br>
+          <div> <h1 style="font-size: 40px;">FluencyPredictor: Report</h1></div>
+          <br>
+          <div><h1>FluencyPredictor: Results</h1></div>
+          <br>
+          <br>
+          <center>
+		<div class="content-wrapper" style="width:600px"><p style="font-size:20px">Thank you for your purchase! Enter your information, and click the button to download your report below!</p>
+          <br>
+          <br>
+          <form action="/get_report" method="POST">
+          <input size="50" style="font-size: 20px;text-align: center;" placeholder='Enter Your Full Name Here' type="text" id='fullname' name='fullname'>
+            <br>
+          <h2>Your Password is: {{password}}</h2>
+          <br><br>
+          <button onclick="location.href='/get_report'" class="read_more" type="submit"><b>Download Your Report </b></button>
+          </form>
+          
+
+          <div>
+            <br>
+            <br>
+          <button onclick="location.href='/home'" type="button" class='read_more'><b>Let's do this again!<b></button></div>
+          <br><br><br><br>
+          </div>  </center>
+        </center>
+      </div>
+    </div>
+
+		
+{% endblock %}
+</html>

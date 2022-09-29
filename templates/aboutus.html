@@ -1,0 +1,27 @@
+{% extends "base2.html" %}
+<title>{% block title%}FluencyPredictor: About Us{% endblock %}</title>
+</head>
+<body>
+{% block content%}
+	<div class="row d_flex" style="background-color: white;">
+        <div class="col-md-12" style="background-color: white;">
+          <center>
+            <br>
+          <div> <h1 style="font-size: 40px;">FluencyPredictor: About Us</h1></div>
+          <br>
+          <br>
+  <br>
+<center>
+<h2>How did we do this?</h2>
+<p style="font-size: 18px;">We utilized the Vosk API to convert speech to text.<br>
+Then, we used lexical diversity analysis to calculate MTLD and HD-D. <br>Flask served as microframework for this web application, and MUI CSS served as the front-end. <br>No database service is being utilized for this service. Any information is deleted within 10 minutes of use.</p>
+<br><br>
+<h2>Future Steps</h2>
+<p style="font-size: 18px;">We want to integrate more questions into this app.</p>
+<br><br>
+<h2>Have any suggestions?</h2>
+<p style="font-size: 18px;"> Feel free to submit them in the "Contact Us" Page!</p>
+<br><br>
+</center>
+
+{% endblock %}

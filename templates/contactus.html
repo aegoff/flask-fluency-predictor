@@ -1,0 +1,33 @@
+{% extends "base2.html" %}
+<title>{% block title%}FluencyPredictor: Contact Us!{% endblock %}</title>
+</head>
+<body>
+{% block content%}
+<center>
+<div class="row d_flex" style="background-color: white;">
+        <div class="col-md-12" style="background-color: white;">
+         <div style="width:400px">       
+          <br>
+          <div><h1 style="font-size:40px">FluencyPredictor: Contact Us!</h1></div>
+          <br>
+          <br>
+          {{info_text}}
+    <form action="/form" method="POST" id="my-form">
+          <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label" style="font-size: 20px;">Email:</label><br>
+          <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div><br>
+    </form>
+          <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label" style="font-size: 20px; text-align: left;">Message:</label><br>
+
+          <textarea form="my-form" name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div><br>
+          <button form="my-form" type="submit" class="read_more"><b>Submit</b></button>
+          <br><br>
+        </center>
+      </div>
+    </div>
+
+{% endblock %}
+
